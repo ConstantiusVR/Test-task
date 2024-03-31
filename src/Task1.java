@@ -23,12 +23,20 @@ public class Task1 {
         }
     }
     private static String mathFunc (int a, int b) {
+      String div = "";
+        if (a == 0){
+            div = " 0 ";
+        } else if (b == 0){
+            div = "Деление невозможно";
+        } else {
+            int number = a/b;
+            div = String.valueOf(number);
+        }
+            int sum = a + b;
+            int subtract = a - b;
+            int multipl = a * b;
 
-        int sum = a + b;
-        int subtract = a - b;
-        int multipl = a * b;
-        int div = a/b;
-        return ("\n x+y = " + sum + "," + "\n x-y = " + subtract + "," + "\n x*y = " + multipl + "," + "\n x/y = " + div);
+            return ("\n x+y = " + sum + "," + "\n x-y = " + subtract + "," + "\n x*y = " + multipl + "," + "\n x/y = " + div);
     }
 
 
@@ -51,8 +59,5 @@ public class Task1 {
         System.out.print(result2);
 
     }
-
-
-
 
 }

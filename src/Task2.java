@@ -10,9 +10,9 @@ public class Task2 {
 
     private static String compareFunc(String a, String b) {
         if (a.equals(b)) {
-            return ("\n Строки идентичны");
+            return ("\n Строки идентичны!");
         } else {
-            return ("\n Строки неидентичны");
+            return ("\n Строки неидентичны!");
         }
     }
     public static void main(String[] args) {
